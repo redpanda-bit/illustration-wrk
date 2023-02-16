@@ -358,13 +358,13 @@ h1 + ol, h2 + ol, h3 + ol, h4 + ol, h5 + ol, h6 + ol {
 .p-stairs {
   opacity: 0;
   position: absolute;
-  top: 31%;
-  animation: fade-in 4s ease-in 6s 1 forwards;
-  right: 28%;
-  -moz-transform: translate(35px, 20px) rotate(30deg) scale(0.89);
-  -ms-transform: translate(35px, 20px) rotate(30deg) scale(0.89);
-  -webkit-transform: translate(35px, 20px) rotate(30deg) scale(0.89);
-  transform: translate(35px, 20px) rotate(30deg) scale(0.89);
+  top: 58%;
+  animation: fade-in 0s ease-in 0s 1 forwards;
+  left: 8%;
+  -moz-transform: translate(62px, 100px) rotate(30deg) scale(0.89);
+  -ms-transform: translate(62px, 100px) rotate(30deg) scale(0.89);
+  -webkit-transform: translate(62px, 100px) rotate(30deg) scale(0.89);
+  transform: translate(62px, 100px) rotate(30deg) scale(0.89);
 }
 
 @keyframes fade-in {
@@ -390,6 +390,13 @@ h1 + ol, h2 + ol, h3 + ol, h4 + ol, h5 + ol, h6 + ol {
   /**
    * LAYOUT: =Home
    */
+   .p-stairs {
+    -moz-transform: translate(62px, 120px) rotate(30deg);
+    -ms-transform: translate(62px, 120px) rotate(30deg);
+    -webkit-transform: translate(62px, 120px) rotate(30deg);
+    transform: translate(62px, 120px) rotate(30deg);
+   }
+
   .layout-home .section-illustrations .animation-global {
     top: -65px;
     width: 960px;
@@ -410,10 +417,10 @@ h1 + ol, h2 + ol, h3 + ol, h4 + ol, h5 + ol, h6 + ol {
     padding: 40px 50px;
   }
   .p-stairs {
-    -moz-transform: translate(20px, 5px) rotate(30deg);
-    -ms-transform: translate(20px, 5px) rotate(30deg);
-    -webkit-transform: translate(20px, 5px) rotate(30deg);
-    transform: translate(20px, 5px) rotate(30deg);
+    -moz-transform: translate(58px, 117px) rotate(30deg) scale(0.89);
+    -ms-transform: translate(58px, 117px) rotate(30deg) scale(0.89);
+    -webkit-transform: translate(58px, 117px) rotate(30deg) scale(0.89);
+    transform: translate(58px, 117px) rotate(30deg) scale(0.89);
   }
 }
 /**
@@ -484,6 +491,14 @@ h1 + ol, h2 + ol, h3 + ol, h4 + ol, h5 + ol, h6 + ol {
     bottom: 25px;
     left: 25px;
     font-size: 13px;
+  }
+
+  /* Cloud */
+  .p-stairs {
+    -moz-transform: translate(62px, 80px) rotate(30deg) scale(0.7);
+    -ms-transform: translate(62px, 80px) rotate(30deg) scale(0.7);
+    -webkit-transform: translate(62px, 80px) rotate(30deg) scale(0.7);
+    transform: translate(62px, 80px) rotate(30deg) scale(0.7);
   }
 }
 /**
@@ -909,16 +924,23 @@ Style #2
       font-size:1.125em
   }
   .p-stairs {
-    -moz-transform: translate(30px, 15px) rotate(30deg) scale(0.8);
-    -ms-transform: translate(30px, 15px) rotate(30deg) scale(0.8);
-    -webkit-transform: translate(30px, 15px) rotate(30deg) scale(0.8);
-    transform: translate(30px, 15px) rotate(30deg) scale(0.6)
+    -moz-transform: translate(62px, 80px) rotate(30deg) scale(0.6);
+    -ms-transform: translate(62px, 80px) rotate(30deg) scale(0.6);
+    -webkit-transform: translate(62px, 80px) rotate(30deg) scale(0.6);
+    transform: translate(62px, 80px) rotate(30deg) scale(0.6);
   }
 }
 
 @media only screen and (max-width: 987px) {
   body {
       font-size:1em
+  }
+
+  .p-stairs {
+    -moz-transform: translate(39px, 60px) rotate(30deg) scale(0.5);
+    -ms-transform: translate(39px, 60px) rotate(30deg) scale(0.5);
+    -webkit-transform: translate(39px, 60px) rotate(30deg) scale(0.5);
+    transform: translate(39px, 60px) rotate(30deg) scale(0.5);
   }
 }
 
@@ -1128,16 +1150,16 @@ Style #2
 
 @media only screen and (max-width: 767px) and (orientation:landscape),only screen and (max-width:576px) {
   .p-stairs {
-    -moz-transform: translate(20px, 5px) rotate(30deg) scale(0.3);
-    -ms-transform: translate(20px, 5px) rotate(30deg) scale(0.3);
-    -webkit-transform: translate(20px, 5px) rotate(30deg) scale(0.3);
-    transform: translate(20px, 5px) rotate(30deg) scale(0.3);
+    -moz-transform: translate(32px, 54px) rotate(30deg) scale(0.5);
+    -ms-transform: translate(32px, 54px) rotate(30deg) scale(0.5);
+    -webkit-transform: translate(32px, 54px) rotate(30deg) scale(0.5);
+    transform: translate(32px, 54px) rotate(30deg) scale(0.5);
   }
 }
 
 .p-stairs .p__window {
   width: 7.1591em;
-  height: 9.7272em
+  height: 9.7272em;
 }
 
 .p-stairs .p__window .stars rect {
