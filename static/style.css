@@ -782,45 +782,6 @@ h1 + ol, h2 + ol, h3 + ol, h4 + ol, h5 + ol, h6 + ol {
     transform: translate(20px, 5px) rotate(30deg) scale(0.3);
   }
 }
-/**
- * Mobile, portrait
- */
-@media only screen and (max-width: 359px) {
-  /**
-   * LAYOUT: =Home
-   */
-  .layout-home .home-section .section-catcher {
-    font-size: 22px;
-  }
-  .layout-home .section-illustrations .animation-global {
-    width: 240px;
-  }
-  .layout-home .section-background .svg {
-    width: 240px;
-    height: 240px;
-  }
-  .p-stairs {
-    -moz-transform: translate(20px, 5px) rotate(30deg) scale(0.1);
-    -ms-transform: translate(20px, 5px) rotate(30deg) scale(0.1);
-    -webkit-transform: translate(20px, 5px) rotate(30deg) scale(0.1);
-    transform: translate(20px, 5px) rotate(30deg) scale(0.1);
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*
 Style #2
@@ -1061,6 +1022,31 @@ Style #2
     -ms-transform: translate(32px, 54px) rotate(30deg) scale(0.5);
     -webkit-transform: translate(32px, 54px) rotate(30deg) scale(0.5);
     transform: translate(32px, 54px) rotate(30deg) scale(0.5);
+  }
+}
+
+/**
+ * Mobile, portrait
+ */
+ @media only screen and (max-width: 359px) {
+  /**
+   * LAYOUT: =Home
+   */
+  .layout-home .home-section .section-catcher {
+    font-size: 22px;
+  }
+  .layout-home .section-illustrations .animation-global {
+    width: 240px;
+  }
+  .layout-home .section-background .svg {
+    width: 240px;
+    height: 240px;
+  }
+  .p-stairs {
+    -moz-transform: translate(0px, 0px) rotate(-30deg) scale(0.3);
+    -ms-transform: translate(0px, 0px) rotate(-30deg) scale(0.3);
+    -webkit-transform: translate(0px, 0px) rotate(-30deg) scale(0.3);
+    transform: translate(0px, 0px) rotate(-30deg) scale(0.3);
   }
 }
 
