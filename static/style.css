@@ -776,10 +776,10 @@ h1 + ol, h2 + ol, h3 + ol, h4 + ol, h5 + ol, h6 + ol {
   }
 
   .p-stairs {
-    -moz-transform: translate(20px, 5px) rotate(30deg) scale(0.3);
-    -ms-transform: translate(20px, 5px) rotate(30deg) scale(0.3);
-    -webkit-transform: translate(20px, 5px) rotate(30deg) scale(0.3);
-    transform: translate(20px, 5px) rotate(30deg) scale(0.3);
+    -moz-transform: translate(0px, 0px) rotate(-30deg) scale(0.5);
+    -ms-transform: translate(0px, 0px) rotate(-30deg) scale(0.5);
+    -webkit-transform: translate(0px, 0px) rotate(-30deg) scale(0.5);
+    transform: translate(0px, 0px) rotate(-30deg) scale(0.5);
   }
 }
 
