@@ -1024,7 +1024,8 @@ Style #2
     display: none;
   }
 
-  .section-content {
+  .layout-home .section-content {
+    opacity: 1;
     animation: unset;
   }
 }
