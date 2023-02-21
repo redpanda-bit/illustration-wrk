@@ -408,9 +408,7 @@ h1 + ol, h2 + ol, h3 + ol, h4 + ol, h5 + ol, h6 + ol {
     transform: translate(62px, 80px) rotate(30deg) scale(0.7);
   }
 }
-/**
- * Tablet, landscape
- */
+
 @media only screen and (max-width: 1024px) {
   /**
    * LAYOUT: =Works
@@ -542,9 +540,7 @@ h1 + ol, h2 + ol, h3 + ol, h4 + ol, h5 + ol, h6 + ol {
     height: 200px;
   }
 }
-/**
- * Mobile, landscape
- */
+
 @media only screen and (max-width: 767px) {
   /**
    * BASE: =Loaders
