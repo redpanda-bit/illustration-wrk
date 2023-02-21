@@ -1019,6 +1019,14 @@ Style #2
     -webkit-transform: translate(0px, 0px) rotate(-30deg) scale(0.4);
     transform: translate(0px, 0px) rotate(-30deg) scale(0.4);
   }
+    
+  .illustrations {
+    display: none;
+  }
+
+  .section-content {
+    animation: unset;
+  }
 }
 
 /**
