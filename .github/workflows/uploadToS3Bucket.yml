@@ -15,13 +15,17 @@ jobs:
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v3
         with:
-          role-to-assume: arn:aws:iam::262996808057:role/github-s3-role
+          role-to-assume: arn:aws:iam::262996808057:role/github-s3-role  # Replace with your IAM Role ARN
           aws-region: ${{ secrets.AWS_REGION }}
 
       - name: Sync to S3
-        uses: jakejarvis/s3-sync-action@v2
+        uses: actions/aws-s3-sync@v1
         with:
-          args: --acl public-read --follow-symlinks --delete --exclude '.git/*' --exclude '.github/*'
+          bucket: ${{ secrets.AWS_S3_BUCKET }}
+          region: ${{ secrets.AWS_REGION }}
+          src: './public'
+          overwrite: true
+          delete-removed: true
         env:
-          SOURCE_DIR: './public'
-          AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
