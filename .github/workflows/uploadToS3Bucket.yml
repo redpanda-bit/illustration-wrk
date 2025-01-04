@@ -18,6 +18,13 @@ jobs:
           role-to-assume: arn:aws:iam::262996808057:role/github-s3-role  # Replace with your IAM Role ARN
           aws-region: ${{ secrets.AWS_REGION }}
 
+      - name: Log Environment Variables
+        run: |
+          echo "AWS_REGION: $AWS_REGION"
+          echo "AWS_S3_BUCKET: $AWS_S3_BUCKET"
+          echo "AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY_ID"
+          echo "AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY"
+
       - name: Sync to S3
         uses: jakejarvis/s3-sync-action@master  # Alternative working action
         with:
