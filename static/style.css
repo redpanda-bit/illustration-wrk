@@ -1110,3 +1110,10 @@ Style #2
   border-radius: 999em;
   overflow: hidden
 }
+
+#tree {
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: scale(0.35) rotate(30.2deg) translate(423px, 12px);
+}
