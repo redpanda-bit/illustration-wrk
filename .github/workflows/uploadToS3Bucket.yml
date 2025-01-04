@@ -19,7 +19,7 @@ jobs:
           aws-region: ${{ secrets.AWS_REGION }}
 
       - name: Sync to S3
-        uses: aws-actions/s3-sync@v1  # Alternative working action
+        uses: jakejarvis/s3-sync-action@master  # Alternative working action
         with:
           bucket: ${{ secrets.AWS_S3_BUCKET }}
           region: ${{ secrets.AWS_REGION }}
