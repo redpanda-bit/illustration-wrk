@@ -26,6 +26,11 @@ jobs:
           output-credentials: true
           unset-current-credentials: true
 
+      - name: Debug AWS Variables
+        run: |
+          echo "AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY_ID"
+          echo "AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY"
+          echo "AWS_SESSION_TOKEN: $AWS_SESSION_TOKEN"
 
       - name: Sync to S3
         uses: jakejarvis/s3-sync-action@master
