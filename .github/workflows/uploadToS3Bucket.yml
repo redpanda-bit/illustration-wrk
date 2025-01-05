@@ -26,20 +26,7 @@ jobs:
           output-credentials: true
           unset-current-credentials: true
 
-      - name: Debug AWS Variables
+      - name: Sync `index.html` and `static/*` to S3
         run: |
-          echo "AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY_ID"
-          echo "AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY"
-          echo "AWS_SESSION_TOKEN: $AWS_SESSION_TOKEN"
-      
-      - name: Sync Only `index.html` and `static/*` to S3
-        run: |
+          aws s3 cp ./index.html s3://${{ secrets.AWS_S3_BUCKET }}/
           aws s3 sync ./static/ s3://${{ secrets.AWS_S3_BUCKET }}/static/
-
-      - name: Sync to S3
-        uses: jakejarvis/s3-sync-action@v0.1.1
-        env:
-          AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
-
-          SOURCE_DIR: "./static"
-          DEST_DIR: "/static/"
