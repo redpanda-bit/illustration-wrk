@@ -34,5 +34,5 @@ jobs:
 
       - name: Sync Only `index.html` and `static/*` to S3
         run: |
-          aws s3 cp ./index.html s3://${{ secrets.AWS_S3_BUCKET }}/ --exact-timestamps
-          aws s3 sync ./static/ s3://${{ secrets.AWS_S3_BUCKET }}/static/ --exact-timestamps
+          aws s3 cp ./index.html s3://${{ secrets.AWS_S3_BUCKET }}/
+          aws s3 sync ./static/ s3://${{ secrets.AWS_S3_BUCKET }}/static/
