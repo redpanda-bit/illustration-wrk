@@ -34,5 +34,3 @@ jobs:
           AWS_REGION: ${{ secrets.AWS_REGION }}
         with:
           args: --acl public-read --follow-symlinks --delete
-          overwrite: true
-          delete-removed: true
