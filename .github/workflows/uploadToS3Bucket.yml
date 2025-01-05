@@ -32,7 +32,7 @@ jobs:
         with:
           role-to-assume: arn:aws:iam::262996808057:role/github-s3-role
           aws-region: ${{ secrets.AWS_REGION }}
-          retries: 3
+
 
       - name: Sync to S3
         uses: jakejarvis/s3-sync-action@master
