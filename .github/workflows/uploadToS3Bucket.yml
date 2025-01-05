@@ -12,28 +12,16 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
-    environment: production
 
     steps:
       - uses: actions/checkout@v3
 
-      # - name: Log Environment Variables
-      #   env:
-      #     AWS_REGION: ${{ secrets.AWS_REGION }}
-      #     AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-      #   run: |
-      #     echo "AWS_REGION: $AWS_REGION"
-      #     echo "AWS_S3_BUCKET: $AWS_S3_BUCKET"
-      #     echo "AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY_ID"
-      #     echo "AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY"
-
-      - name: Configure AWS Credentials
-        uses: aws-actions/configure-aws-credentials@v3
+      - name: Configure AWS Credentials with Retry
+        id: configure-aws
         with:
           role-to-assume: arn:aws:iam::262996808057:role/github-s3-role
           aws-region: ${{ secrets.AWS_REGION }}
-        retries: 3
-
+        retries: 3  # Maximum number of attempts
 
       - name: Sync to S3
         uses: jakejarvis/s3-sync-action@master
