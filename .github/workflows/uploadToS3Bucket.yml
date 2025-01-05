@@ -32,6 +32,7 @@ jobs:
           echo "AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY"
           echo "AWS_SESSION_TOKEN: $AWS_SESSION_TOKEN"
 
-      - name: Copy files to the test website with the AWS CLI
+      - name: Sync Only `index.html` and `static/*` to S3
         run: |
-          aws s3 sync ./ s3://${{ secrets.AWS_S3_BUCKET }}/ --exact-timestamps --exact-match --include "index.html" --include "static/*"
+          aws s3 cp ./index.html s3://${{ secrets.AWS_S3_BUCKET }}/ --exact-timestamps
+          aws s3 sync ./static/ s3://${{ secrets.AWS_S3_BUCKET }}/static/ --exact-timestamps
