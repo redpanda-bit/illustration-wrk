@@ -16,12 +16,13 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Configure AWS Credentials with Retry
+      - name: Attempt AWS Role Assumption with Retry
         id: configure-aws
         with:
           role-to-assume: arn:aws:iam::262996808057:role/github-s3-role
           aws-region: ${{ secrets.AWS_REGION }}
-        retries: 3  # Maximum number of attempts
+        with:
+          retries: 3  # Specify the maximum number of attempts
 
       - name: Sync to S3
         uses: jakejarvis/s3-sync-action@master
