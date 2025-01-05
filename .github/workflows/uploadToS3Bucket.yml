@@ -37,8 +37,9 @@ jobs:
           aws s3 sync ./static/ s3://${{ secrets.AWS_S3_BUCKET }}/static/
 
       - name: Sync to S3
-        uses: jakejarvis/s3-sync-action@master
+        uses: jakejarvis/s3-sync-action@v0.1.1
         env:
           AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
+
           SOURCE_DIR: "./static"
           DEST_DIR: "/static/"
