@@ -42,6 +42,6 @@ jobs:
         with:
           bucket: ${{ secrets.AWS_S3_BUCKET }}
           region: ${{ secrets.AWS_REGION }}
-          src: './public'
+          src: './'
           overwrite: true
           delete-removed: true
