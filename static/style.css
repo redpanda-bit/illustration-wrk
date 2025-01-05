@@ -274,6 +274,16 @@ h1 + ol, h2 + ol, h3 + ol, h4 + ol, h5 + ol, h6 + ol {
   transform: translate(62px, 100px) rotate(30deg) scale(0.89);
 }
 
+#tree {
+  position: absolute;
+  right: 0;
+  top: 0;
+  -moz-transform: scale(0.35) rotate(30.2deg) translate(423px, 178px);
+  -ms-transform: scale(0.35) rotate(30.2deg) translate(423px, 178px);
+  -webkit-transform: scale(0.35) rotate(30.2deg) translate(423px, 178px);
+  transform: scale(0.35) rotate(30.2deg) translate(423px, 178px);
+}
+
 @keyframes fade-in {
   0% {opacity: 0;}
   100% {opacity: 1;}
@@ -308,6 +318,13 @@ h1 + ol, h2 + ol, h3 + ol, h4 + ol, h5 + ol, h6 + ol {
     top: -65px;
     width: 960px;
   }
+
+  #tree {
+    -moz-transform: scale(0.35) rotate(30.2deg) translate(423px, 387px);
+    -ms-transform: scale(0.35) rotate(30.2deg) translate(423px, 387px);
+    -webkit-transform: scale(0.35) rotate(30.2deg) translate(423px, 387px);
+    transform: scale(0.35) rotate(30.2deg) translate(423px, 387px);
+  }
 }
 /**
  * Screen, medium size small height
@@ -328,6 +345,13 @@ h1 + ol, h2 + ol, h3 + ol, h4 + ol, h5 + ol, h6 + ol {
     -ms-transform: translate(58px, 117px) rotate(30deg) scale(0.89);
     -webkit-transform: translate(58px, 117px) rotate(30deg) scale(0.89);
     transform: translate(58px, 117px) rotate(30deg) scale(0.89);
+  }
+
+  #tree {
+    -moz-transform: scale(0.35) rotate(30.2deg) translate(423px, 11px);
+    -ms-transform: scale(0.35) rotate(30.2deg) translate(423px, 11px);
+    -webkit-transform: scale(0.35) rotate(30.2deg) translate(423px, 11px);
+    transform: scale(0.35) rotate(30.2deg) translate(423px, 11px);
   }
 }
 /**
@@ -406,6 +430,14 @@ h1 + ol, h2 + ol, h3 + ol, h4 + ol, h5 + ol, h6 + ol {
     -ms-transform: translate(62px, 80px) rotate(30deg) scale(0.7);
     -webkit-transform: translate(62px, 80px) rotate(30deg) scale(0.7);
     transform: translate(62px, 80px) rotate(30deg) scale(0.7);
+  }
+
+  /* Tree */
+  #tree {
+    -moz-transform: scale(0.35) rotate(30.2deg) translate(423px, 11px);
+    -ms-transform: scale(0.35) rotate(30.2deg) translate(423px, 11px);
+    -webkit-transform: scale(0.35) rotate(30.2deg) translate(423px, 11px);
+    transform: scale(0.35) rotate(30.2deg) translate(423px, 11px);
   }
 }
 
@@ -777,6 +809,13 @@ h1 + ol, h2 + ol, h3 + ol, h4 + ol, h5 + ol, h6 + ol {
     -webkit-transform: translate(0px, 0px) rotate(-30deg) scale(0.5);
     transform: translate(0px, 0px) rotate(-30deg) scale(0.5);
   }
+
+  #tree {
+    -moz-transform: scale(0.35) rotate(30.2deg) translate(423px, 11px);
+    -ms-transform: scale(0.35) rotate(30.2deg) translate(423px, 11px);
+    -webkit-transform: scale(0.35) rotate(30.2deg) translate(423px, 11px);
+    transform: scale(0.35) rotate(30.2deg) translate(423px, 11px);
+  }
 }
 
 /*
@@ -793,6 +832,13 @@ Style #2
     -webkit-transform: translate(62px, 80px) rotate(30deg) scale(0.6);
     transform: translate(62px, 80px) rotate(30deg) scale(0.6);
   }
+
+  #tree {
+    -moz-transform: scale(0.35) rotate(30.2deg) translate(423px, 11px);
+    -ms-transform: scale(0.35) rotate(30.2deg) translate(423px, 11px);
+    -webkit-transform: scale(0.35) rotate(30.2deg) translate(423px, 11px);
+    transform: scale(0.35) rotate(30.2deg) translate(423px, 11px);
+  }
 }
 
 @media only screen and (max-width: 987px) {
@@ -801,10 +847,43 @@ Style #2
   }
 
   .p-stairs {
-    -moz-transform: translate(39px, 60px) rotate(30deg) scale(0.5);
-    -ms-transform: translate(39px, 60px) rotate(30deg) scale(0.5);
-    -webkit-transform: translate(39px, 60px) rotate(30deg) scale(0.5);
-    transform: translate(39px, 60px) rotate(30deg) scale(0.5);
+    -moz-transform: translate(39px, 76px) rotate(30deg) scale(0.8);
+    -ms-transform: translate(39px, 76px) rotate(30deg) scale(0.8);
+    -webkit-transform: translate(39px, 76px) rotate(30deg) scale(0.8);
+    transform: translate(39px, 76px) rotate(30deg) scale(0.8);
+  }
+
+  #tree {
+    -moz-transform: scale(0.35) rotate(30.2deg) translate(258px, 11px);
+    -ms-transform: scale(0.35) rotate(30.2deg) translate(258px, 11px);
+    -webkit-transform: scale(0.35) rotate(30.2deg) translate(258px, 11px);
+    transform: scale(0.35) rotate(30.2deg) translate(258px, 11px);
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .p-stairs {
+    -moz-transform: translate(0px, 0px) rotate(-30deg) scale(0.5);
+    -ms-transform: translate(0px, 0px) rotate(-30deg) scale(0.5);
+    -webkit-transform: translate(0px, 0px) rotate(-30deg) scale(0.5);
+    transform: translate(0px, 0px) rotate(-30deg) scale(0.5);
+  }
+
+  #tree {
+    -moz-transform: scale(0.35) rotate(30.2deg) translate(290px, -166px);
+    -ms-transform: scale(0.35) rotate(30.2deg) translate(290px, -166px);
+    -webkit-transform: scale(0.35) rotate(30.2deg) translate(290px, -166px);
+    transform: scale(0.35) rotate(30.2deg) translate(290px, -166px);
+  }
+}
+
+
+@media only screen and (max-width: 767px) {
+  #tree {
+    -moz-transform: scale(0.35) rotate(30.2deg) translate(258px, -355px);
+    -ms-transform: scale(0.35) rotate(30.2deg) translate(258px, -355px);
+    -webkit-transform: scale(0.35) rotate(30.2deg) translate(258px, -355px);
+    transform: scale(0.35) rotate(30.2deg) translate(258px, -355px);
   }
 }
 
@@ -1109,11 +1188,4 @@ Style #2
   left: calc( 9.5% + 3px);
   border-radius: 999em;
   overflow: hidden
-}
-
-#tree {
-  position: absolute;
-  right: 0;
-  top: 0;
-  transform: scale(0.35) rotate(30.2deg) translate(423px, 12px);
 }
